@@ -1,4 +1,4 @@
-package com.sprindDemo.demo;
+package com.springDemo.demo;
 
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
@@ -16,8 +16,6 @@ public class DemoApplication {
 		BeanFactory factory=new ClassPathXmlApplicationContext("./spring.xml");
 		Triangle triangle =(Triangle) factory.getBean("Triangle");
 		triangle.draw();
-
-
 	}
 
 }

@@ -3,5 +3,7 @@
         "http://www.springframework.org/dtd/spring-beans.dtd">
 
 <beans>
-    <bean id="Triangle" class="com.sprindDemo.demo.Triangle"/>
+    <bean id="Triangle" class="com.springDemo.demo.Triangle">
+    <property name="type" value="Equilateral"/>
+    </bean>
 </beans>
