@@ -4,7 +4,10 @@
 
 <beans>
     <bean id="Triangle" class="com.springDemo.demo.Triangle">
-   <!-- getter injection
+        <property name="point1" ref="Point1"/>
+        <property name="point2" ref="Point2"/>
+    </bean>
+    <!-- getter injection
         <property name="type" value="Equilateral"/>
     -->
     <!--Constructor injection -->
@@ -12,5 +15,13 @@
         <constructor-arg type="int" value="10"/>
         <constructor-arg type="java.lang.String" value="ISO Triangle"/>
       -->
+
+        <bean id="Point1" class="com.springDemo.demo.Point">
+            <property name="x" value="1"/>
+            <property name="y" value="2"/>
+        </bean>
+    <bean id ="Point2" class="com.springDemo.demo.Point">
+            <property name="x" value="-1"/>
+            <property name="y" value="-2"/>
     </bean>
 </beans>
